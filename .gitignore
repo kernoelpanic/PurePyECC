@@ -6,5 +6,8 @@ sdist
 *.py[co]
 MANIFEST
 
+# exclude python packge index config
+.pypirc
+
 # ignore swap files
 *.swp
