@@ -1,7 +1,6 @@
 # ignore builds
 dist
 build
-bin
 sdist
 *.py[co]
 MANIFEST
