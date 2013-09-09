@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>purepyecc.arithmetic0</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;purepyecc ::
+        Module&nbsp;arithmetic0
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="purepyecc.arithmetic0-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module arithmetic0</h1><p class="nomargin-top"><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html">source&nbsp;code</a></span></p>
+<pre class="literalblock">
+Functions for basic ECC arithmetic.
+
+- Basic binary arithmetic.
+- Field arithmetic with polynomials in GF(2)/GF(2^m).
+- EC arithmetic on ECs in GF(2^m).
+
+</pre>
+
+<hr />
+<div class="fields">      <p><strong>Version:</strong>
+        0.1.0
+      </p>
+      <p><strong>Author:</strong>
+        Aljosha Judmayer
+      </p>
+</div><!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#ecgf2m_add_point" class="summary-sig-name">ecgf2m_add_point</a>(<span class="summary-sig-arg">x1</span>,
+        <span class="summary-sig-arg">y1</span>,
+        <span class="summary-sig-arg">x2</span>,
+        <span class="summary-sig-arg">y2</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">a</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Add a point to another (x1,y1)+(x2,y2)=(x3,y3)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#ecgf2m_add_point">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#ecgf2m_dbl_point" class="summary-sig-name">ecgf2m_dbl_point</a>(<span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">y</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">a</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Add point to itself aka.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#ecgf2m_dbl_point">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#ecgf2m_sub_point" class="summary-sig-name">ecgf2m_sub_point</a>(<span class="summary-sig-arg">x1</span>,
+        <span class="summary-sig-arg">y1</span>,
+        <span class="summary-sig-arg">x2</span>,
+        <span class="summary-sig-arg">y2</span>,
+        <span class="summary-sig-arg">f</span>,
+        <span class="summary-sig-arg">a</span>=<span class="summary-sig-default">0</span>)</span><br />
+      Subtraction of two points (x1,y1)-(x2,y2)=(x3,y3)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#ecgf2m_sub_point">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#gf2m_add" class="summary-sig-name">gf2m_add</a>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span><br />
+      Element addition: (a+b)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_add">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#gf2m_sub" class="summary-sig-name">gf2m_sub</a>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span><br />
+      Element substraction: (a-b)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_sub">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#gf2m_mul" class="summary-sig-name">gf2m_mul</a>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>)</span><br />
+      Element multiplication: (a*b)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_mul">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#gf2m_modmul" class="summary-sig-name">gf2m_modmul</a>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>,
+        <span class="summary-sig-arg">f</span>)</span><br />
+      Element multiplication: (a*b) mod f</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_modmul">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#gf2m_div" class="summary-sig-name">gf2m_div</a>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">b</span>,
+        <span class="summary-sig-arg">f</span>)</span><br />
+      Element division: a/b mod f(x) == a*b^-1 mod f(x)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_div">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#gf2m_mod" class="summary-sig-name">gf2m_mod</a>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">f</span>)</span><br />
+      Element modular reduction: a(x) modulo f(x)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_mod">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#gf2m_modmulinv" class="summary-sig-name">gf2m_modmulinv</a>(<span class="summary-sig-arg">a</span>,
+        <span class="summary-sig-arg">f</span>)</span><br />
+      Element Inversion a(x) =&gt; a^-1 mod f(x)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_modmulinv">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#_bittest" class="summary-sig-name" onclick="show_private();">_bittest</a>(<span class="summary-sig-arg">n</span>,
+        <span class="summary-sig-arg">offset</span>)</span><br />
+      Test bit at offset of numeric value</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#_bittest">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="_bitset"></a><span class="summary-sig-name">_bitset</span>(<span class="summary-sig-arg">n</span>,
+        <span class="summary-sig-arg">offset</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#_bitset">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#_bitlencount" class="summary-sig-name" onclick="show_private();">_bitlencount</a>(<span class="summary-sig-arg">n</span>)</span><br />
+      Bit length of value and count of bits set to 1</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#_bitlencount">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#_bitlen" class="summary-sig-name" onclick="show_private();">_bitlen</a>(<span class="summary-sig-arg">n</span>)</span><br />
+      Bit length of value</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#_bitlen">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr class="private">
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#_binpolydeg" class="summary-sig-name" onclick="show_private();">_binpolydeg</a>(<span class="summary-sig-arg">n</span>)</span><br />
+      Degree of polynomial n: deg(n)</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#_binpolydeg">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="purepyecc.arithmetic0-module.html#num_to_poly" class="summary-sig-name">num_to_poly</a>(<span class="summary-sig-arg">n</span>,
+        <span class="summary-sig-arg">var</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">x</code><code class="variable-quote">'</code></span>)</span><br />
+      Helper function to print numeric value as a polynomial</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#num_to_poly">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="poly_to_num"></a><span class="summary-sig-name">poly_to_num</span>(<span class="summary-sig-arg">polystr</span>,
+        <span class="summary-sig-arg">var</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">x</code><code class="variable-quote">'</code></span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#poly_to_num">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__licence__"></a><span class="summary-name">__licence__</span> = <code title="' GPL '"><code class="variable-quote">'</code><code class="variable-string"> GPL </code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'purepyecc'"><code class="variable-quote">'</code><code class="variable-string">purepyecc</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="ecgf2m_add_point"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ecgf2m_add_point</span>(<span class="sig-arg">x1</span>,
+        <span class="sig-arg">y1</span>,
+        <span class="sig-arg">x2</span>,
+        <span class="sig-arg">y2</span>,
+        <span class="sig-arg">f</span>,
+        <span class="sig-arg">a</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#ecgf2m_add_point">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a point to another (x1,y1)+(x2,y2)=(x3,y3)</p>
+  <p>let J + K = L where L = (x3, y3), then the equations to add two points
+  with different x coodrinates x1 != x2:</p>
+<pre class="literalblock">
+   s = (y2 + y1) / (x2 + x1)
+   x3 = s^2 + s + x1 + x2 + a
+   y3 = s*(x1 + x3) + x3 + y1 = s*(x2 + x3) + x3 + y2
+</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>x1</code></strong> (int or long), <strong class="pname"><code>y1</code></strong> (int or long) - point one as two binary polynomials</li>
+        <li><strong class="pname"><code>x2</code></strong> (int or long), <strong class="pname"><code>y2</code></strong> (int or long) - Point two as two binary polynomials</li>
+        <li><strong class="pname"><code>f</code></strong> (int or long) - irreducable polynome f(x), used for modular reduction</li>
+        <li><strong class="pname"><code>a</code></strong> (int or long) - Coefficient 'a' of curve, default is a=0. In a Koblitz curve 'a' 
+          is either 0 or 1 and 'b' is always zero, b=0.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>(x3,y3), sum of two points as new point represented as tuple</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="ecgf2m_dbl_point"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ecgf2m_dbl_point</span>(<span class="sig-arg">x</span>,
+        <span class="sig-arg">y</span>,
+        <span class="sig-arg">f</span>,
+        <span class="sig-arg">a</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#ecgf2m_dbl_point">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add point to itself aka. double point. (x,y)*2=(x3,y3)</p>
+  <p>Let 2J = L where L = (x3, y3). The the equations to double the point J
+  = (x, y) are as follows:</p>
+<pre class="literalblock">
+   s = x + (y / x)
+   x3 = s^2 + s + a = x^2 + b / x^2
+   y3 = x^2 + s*x3 + x3
+</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>x</code></strong> (int or long), <strong class="pname"><code>y</code></strong> (int or long) - point to double as two binary polynomials</li>
+        <li><strong class="pname"><code>f</code></strong> (int or long) - irreducable polynome f(x), used for modular reduction</li>
+        <li><strong class="pname"><code>a</code></strong> (int or long) - Coefficient 'a' of curve, default is a=0. In a Koblitz curve 'a' 
+          is either 0 or 1 and 'b' is always zero, b=0.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>(x3,y3), doubled point as tuple</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="ecgf2m_sub_point"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ecgf2m_sub_point</span>(<span class="sig-arg">x1</span>,
+        <span class="sig-arg">y1</span>,
+        <span class="sig-arg">x2</span>,
+        <span class="sig-arg">y2</span>,
+        <span class="sig-arg">f</span>,
+        <span class="sig-arg">a</span>=<span class="sig-default">0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#ecgf2m_sub_point">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Subtraction of two points (x1,y1)-(x2,y2)=(x3,y3)</p>
+  <p>Let J - K = J + (-K) where -K = (xk,xk + yk):</p>
+<pre class="literalblock">
+   (x1,y1) - (x2,y2) = (x1,y1) + (-(x2,y2))
+   (x1,y1) - (x2,y2) = (x1,y1) + (x2,x2 + y2))
+</pre>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>x1</code></strong> (int or long), <strong class="pname"><code>y1</code></strong> (int or long) - Point one as two binary polynomials</li>
+        <li><strong class="pname"><code>x2</code></strong> (int or long), <strong class="pname"><code>y2</code></strong> (int or long) - Point two as two binary polynomials</li>
+        <li><strong class="pname"><code>f</code></strong> (int or long) - irreducable polynome f(x), used for modular reduction</li>
+        <li><strong class="pname"><code>a</code></strong> (int or long) - Coefficient 'a' of curve, default is a=0. In a Koblitz curve 'a' 
+          is either 0 or 1 and 'b' is always zero, b=0.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>(x3,y3), subtracted point as tuple</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="gf2m_add"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">gf2m_add</span>(<span class="sig-arg">a</span>,
+        <span class="sig-arg">b</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_add">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Element addition: (a+b)</p>
+  <p>Addition and substraction are the same in GF(2^m). The operation is a 
+  simple XOR of the absolute values.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>a</code></strong> (int or long), <strong class="pname"><code>b</code></strong> (int or long) - binary polynomials</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>sum as binary polynomial in GF(2)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="gf2m_sub"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">gf2m_sub</span>(<span class="sig-arg">a</span>,
+        <span class="sig-arg">b</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_sub">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Element substraction: (a-b)</p>
+  <p>Addition and substraction are the same in GF(2^m). The operation is a 
+  simple XOR of the absolute values.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>a</code></strong> (int or long), <strong class="pname"><code>b</code></strong> (int or long) - binary polynomials</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>difference as binary polynomial in GF(2)</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="gf2m_mul"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">gf2m_mul</span>(<span class="sig-arg">a</span>,
+        <span class="sig-arg">b</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_mul">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Element multiplication: (a*b)</p>
+  <p>Multiplication of two elements, without reduction by irreducable 
+  polynom.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>a</code></strong> (int or long), <strong class="pname"><code>b</code></strong> (int or long) - binary polynomials</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>c, product as binary polynomial</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="gf2m_modmul"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">gf2m_modmul</span>(<span class="sig-arg">a</span>,
+        <span class="sig-arg">b</span>,
+        <span class="sig-arg">f</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_modmul">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Element multiplication: (a*b) mod f</p>
+  <p>Including reduction by irreducable polynom f.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>a</code></strong> (int or long), <strong class="pname"><code>b</code></strong> (int or long) - binary polynomials</li>
+        <li><strong class="pname"><code>f</code></strong> (int or long) - irreducable polynome f(x), used for modular reduction</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>product as reduced binary polynomial</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="gf2m_div"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">gf2m_div</span>(<span class="sig-arg">a</span>,
+        <span class="sig-arg">b</span>,
+        <span class="sig-arg">f</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_div">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Element division: a/b mod f(x) == a*b^-1 mod f(x)</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>a</code></strong> (int or long), <strong class="pname"><code>b</code></strong> (int or long) - divident and divisor as binary polynomials</li>
+        <li><strong class="pname"><code>f</code></strong> (int or long) - irreducable modular reduction polynomial as binary polynomail</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>c, quotient as binary polynomial</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="gf2m_mod"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">gf2m_mod</span>(<span class="sig-arg">a</span>,
+        <span class="sig-arg">f</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_mod">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Element modular reduction: a(x) modulo f(x)</p>
+  <p>A binary polynomial a(x) getrs reduced to a degree lower than that of 
+  f(x). An irreducable binary polynomial f is used for modular 
+  reduction.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>a</code></strong> (int or long) - binary polyonomial</li>
+        <li><strong class="pname"><code>f</code></strong> (int or long) - irreducable binary polynomial f(x)</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>c, reduced binary polynomail</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="gf2m_modmulinv"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">gf2m_modmulinv</span>(<span class="sig-arg">a</span>,
+        <span class="sig-arg">f</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#gf2m_modmulinv">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Element Inversion a(x) =&gt; a^-1 mod f(x)</p>
+  <p>Calculates the modular multiplicative inverse of a(x) mod f(x). Ueses 
+  an adapted version of the exdendet euclidiean algorithem. The outline for
+  the adapted algorithem was taken from Katsuki Kobayashi et al. 'An 
+  Algorithem for Inversion in $GF(2^m)$ Suitable for Implementation Using a
+  Polynomial Multiply Instruction on GF(2)'. The same algorithem can also 
+  be found in Hankerson et al. 'Software Implementation of Elliptic Curve 
+  Cryptography over Binary Fields', 24.01.2000</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>a</code></strong> (int or long) - binary polynomial</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>ux, modular multiplicative as binary polynomail</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_bittest"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_bittest</span>(<span class="sig-arg">n</span>,
+        <span class="sig-arg">offset</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#_bittest">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Test bit at offset of numeric value</p>
+  <p>If bit at offset is 1, 1 is returned. This means that 2**offset is 
+  numeric &amp; mask. No check of offset length is done!</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>n</code></strong> (int or long) - numeric value</li>
+        <li><strong class="pname"><code>offset</code></strong> (int or long) - position of bit in n to test, starts with 0</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>1 or 0</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_bitlencount"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_bitlencount</span>(<span class="sig-arg">n</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#_bitlencount">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Bit length of value and count of bits set to 1</p>
+  <p>DEPRICATED Since python 2.7 value.bit_length() should be used instead.
+  This function does not work for negative values!</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>n</code></strong> (int or long) - positive numeric value</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>tuple of 'length' and 'count' valu</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_bitlen"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_bitlen</span>(<span class="sig-arg">n</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#_bitlen">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Bit length of value</p>
+  <p>Since python 2.7 this is very easy</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>n</code></strong> (int or long) - numeric value</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>length, number of bits used to represent n, as numeric value</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="_binpolydeg"></a>
+<div class="private">
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">_binpolydeg</span>(<span class="sig-arg">n</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#_binpolydeg">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Degree of polynomial n: deg(n)</p>
+  <p>Interprets input value as binary polynomial and returns its degree</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>n</code></strong> (int or long) - numeric value</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>Degree as numeric value</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="num_to_poly"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">num_to_poly</span>(<span class="sig-arg">n</span>,
+        <span class="sig-arg">var</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">x</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="purepyecc.arithmetic0-pysrc.html#num_to_poly">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Helper function to print numeric value as a polynomial</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>n</code></strong> (int or long) - numeric value</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>poly, list of polynomail representation</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Thu May  2 19:35:55 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

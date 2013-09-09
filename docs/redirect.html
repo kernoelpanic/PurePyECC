@@ -1,0 +1,38 @@
+<html><head><title>Epydoc Redirect Page</title>
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="pragma" content="no-cache" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+<!--
+var pages = ["purepyecc.test.test_fieldarithmetic0.TestFieldArithmetic0-c", "purepyecc.test.test_ecarithmetic0.TestEcArithmetic0-c", "purepyecc.ecexception.InvalidECDomainParameter-c", "purepyecc.ecexception.InvalidECPublicKey-c", "purepyecc.test.test_fieldarithmetic0-m", "purepyecc.test.test_ecarithmetic0-m", "purepyecc.ec.EllipticCurve-c", "purepyecc.ec.KoblitzEC-c", "purepyecc.arithmetic0-m", "purepyecc.ecexception-m", "purepyecc.ec.BinaryEC-c", "purepyecc.ec.PrimeEC-c", "purepyecc.ecdh.ECDH-c", "purepyecc.ecdh-m", "purepyecc.ec-m"];
+var dottedName = get_anchor();
+if (dottedName) {
+    var target = redirect_url(dottedName);
+    if (target) window.location.replace(target);
+}
+// -->
+</script>
+
+<h3>Epydoc Auto-redirect page</h3>
+
+<p>When javascript is enabled, this page will redirect URLs of
+the form <tt>redirect.html#<i>dotted.name</i></tt> to the
+documentation for the object with the given fully-qualified
+dotted name.</p>
+<p><a id="message"> &nbsp; </a></p>
+
+<script type="text/javascript">
+<!--
+if (dottedName) {
+    var msg = document.getElementById("message");
+    msg.innerHTML = "No documentation found for <tt>"+
+                    dottedName+"</tt>";
+}
+// -->
+</script>
+
+</body>
+</html>
