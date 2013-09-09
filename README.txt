@@ -7,18 +7,22 @@ The implementation should help people to understand the basics of
 elliptic curve cryptography over binary curves by providing a simple example. 
 The implementation is not optimized for performance or a high level of security! 
 
-At the moment only the NIST K-283 curve is supported. It also containes an
-ECDH implementation as well as an example client-server chat that uses ECDH
-for key negotiation. 
+At the moment only the NIST K-283 curve is supported. 
+
+Example
+=======
+
+The package also containes an ECDH example implementation as well as an example 
+client-server chat that uses ECDH for key negotiation. 
 
 The scripts in ``./bin/alice.py`` and ``./bin/bob.py`` contain the client-server
 example where ``./bin/bob.py`` is the server. This example uses pycrypto-2.6 for
 AES encryption using the negotiated ECDH secret as key. 
 
-1. Run ``./bin/bob.py -v 5533`` whit a port to listen as parameter. 
+1. Run ``python ./bin/bob.py -v 5533`` with a port to listen as parameter. 
    Optionally be verbose by using "-v".
 
-2. Run ``./bin/alice.py -v $IPofBob 5533`` where $IPofBob is the IP-address
+2. Run ``python ./bin/alice.py -v $IPofBob 5533`` where $IPofBob is the IP-address
    on which Bob listens at port 5533, in a test scenario this will be
    ``localhost``. 
    Optionally be verbose by using "-v".
@@ -42,6 +46,11 @@ ECDH over K-283 can be used in other python applications as follows::
     Qb = (Qbx, Qby)
     sec = DH.create_secret_key(Qb)
     print "Calculated ECDH secret key:\n%s" % hex(sec[0])        
+
+Test cases
+==========
+Test cases for several different operations can be found in ``./purepyecc/test``.
+To run all test cases type ``python ./purepyecc/test/test_all.py``.
 
 Documentation
 =============

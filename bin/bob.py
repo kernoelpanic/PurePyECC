@@ -10,8 +10,8 @@ import sys
 import re
 from optparse import OptionParser
 
-sys.path.append("../pycrypto-2.6/lib2")
-sys.path.append("../../pycrypto-2.6/lib2")
+sys.path.append("./pycrypto-2.6/lib2")
+sys.path.append("./bin/pycrypto-2.6/lib2")
 from Crypto.Cipher import AES
 from Crypto.Util import Counter
 
