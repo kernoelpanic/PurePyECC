@@ -12,7 +12,5 @@ setup(
     license='LICENSE.txt',
     description='Pure python ECC arithmetic over binary curves.',
     long_description=open('README.txt').read(),
-    install_requires=[
-        "pycrypto  >= 2.6",
-    ],
+    install_requires=["pycrypto  >= 2.6"],
 )
