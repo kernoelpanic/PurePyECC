@@ -15,5 +15,5 @@ setup(
     url='https://github.com/kernoelpanic/PurePyECC',
     license='LICENSE.txt',
     description='PurePyECC should help you to learn the basics of ECC arithmetic over binary curves.',
-    long_description=open('README.md').read(),
+    long_description=open('README.txt').read(),
 )
