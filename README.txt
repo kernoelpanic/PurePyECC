@@ -2,10 +2,11 @@
 PurePyECC
 =========
 
-PurePyECC provides basic ECC arithmetic over binary curves written in pure python.
-The implementation should help people to understand the basics of 
-elliptic curve cryptography over binary curves by providing a simple example. 
-The implementation is not optimized for performance or a high level of security! 
+PurePyECC should help you to learn the basics of ECC arithmetic over binary curves. Therefore, it was written in pure python and has no external dependencies other than python 2.7.
+
+The implementation should help people to understand the basics of elliptic
+curve cryptography over binary curves by providing a simple example. So this
+code is for learning purposes only. The implementation is not optimized for performance or security! 
 
 At the moment only the NIST K-283 curve is supported. 
 
@@ -50,28 +51,6 @@ ECDH over K-283 can be used in other python applications as follows::
     sec = DH.create_secret_key(Qb)
     print "Calculated ECDH secret key:\n%s" % hex(sec[0])        
 
-
-Example
-=======
-
-The package also containes an example client-server chat, 
-which uses ECDH for key negotiation. 
-
-This example needs ``pycrypto-2.6`` or higher for the AES encryption which uses
-the negotiated ECDH secret as key! This is the one-and-only requirement of this
-software package (except python of course). 
-
-The scripts in ``./bin/alice.py`` and ``./bin/bob.py`` contain the client-server
-example where ``./bin/bob.py`` is the server. 
-
-1. Run ``python ./bin/bob.py -v 5533`` with a port to listen as parameter. 
-   Optionally be verbose by using "-v".
-
-2. Run ``python ./bin/alice.py -v $IPofBob 5533`` where $IPofBob is the IP-address
-   on which Bob listens at port 5533, in a test scenario this will be
-   ``localhost``. 
-   Optionally be verbose by using "-v".
-
 Author
 ======
-The programm was written by aljosha judmayer (dev [at] 3-volution.net)
+The programm was written by aljosha judmayer (kernoelpanic [at] 3-volution.net)
